@@ -28,7 +28,7 @@ fullpage.scroll(function () {
 
 let Inzelalbouton = document.getElementById("logo");
 function yhbetcitron() {
-  location.href = "/index.html";
+  location.href = "./index.html";
 }
 Inzelalbouton.onclick = yhbetcitron;
 
