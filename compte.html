@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/dist/compiled.css" rel="stylesheet" />
+    <script>
+      function creationCompte() {
+        while (true) {
+          let name = prompt("Entrez votre Nom:");
+          let prenom = prompt("Entre votre Prénom:");
+          let email = prompt("Entrez votre email:");
+          let username = prompt("Enter a username:");
+          let age = parseInt(prompt("Donnez votre age:"));
+
+          if (
+            verifierUser(username) &&
+            verifierAge(age) &&
+            verifierEmail(email)
+          ) {
+            let password = prompt("Saisissez un nouveau mot de passe:");
+
+            document.write("<h3>Votre nouveau profil est:</h3>");
+            document.write("<p>Nom: " + name + "</p>");
+            document.write("<p>Prénom: " + prenom + "</p>");
+            document.write("<p>Username: " + username + "</p>");
+            document.write("<p>Age: " + age + "</p>");
+            document.write("<p>Email: " + email + "</p>");
+            document.write("<p>Password: " + password + "</p>");
+            break;
+          } else {
+            alert("Veuillez corriger les informations saisies.");
+          }
+        }
+      }
+
+      function verifierUser(username) {
+        return username.length >= 5;
+      }
+
+      function verifierAge(age) {
+        return age >= 13;
+      }
+
+      function verifierEmail(email) {
+        let vEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return vEmail.test(email);
+      }
+    </script>
+    <style>
+      @import url("../cursors/cursors.css");
+      .text-sm a {
+        text-decoration: none;
+      }
+      .text-sm a:hover {
+        text-decoration: underline;
+      }
+      .bon {
+        text-align: center;
+        text-decoration: none;
+      }
+      .bon a:hover {
+        text-decoration: underline;
+      }
+      .sn {
+        text-align: center;
+        font-size: 25px;
+      }
+      footer {
+        color: #fff;
+        position: fixed;
+        bottom: -2%;
+        width: 100%;
+        z-index: 999;
+      }
+      footer p {
+        color: black;
+        margin-left: 5%;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 80%;
+      }
+      /*.rightT{
+      position: absolute;
+      top: 261%;
+      margin-right: 5%
+      }*/
+      .ConR img {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: -34px;
+        margin-right: 10px;
+        left: 4350%;
+        filter: brightness(30%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="dark">
+      <nav class="left">
+        <div id="logo">
+          <h2>space-y-6.</h2>
+        </div>
+      </nav>
+      <nav class="center">
+        <ul>
+          <li><a href="./space-y-6.html">Space-y-6</a></li>
+          <li><a href="./a propos.html">&Aacute; propos</a></li>
+          <li><a href="./y-6-Colection.html">y-6-Colection</a></li>
+          <li><a href="./Decouvrir.html">Découvrir</a></li>
+          <li><a href="./Assistance.html">Assistance</a></li>
+          <li><a href="./Shop.html">Panier</a></li>
+        </ul>
+      </nav>
+      <nav class="right">
+        <ul>
+          <li><a href="compte.html">Account</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li class="langue">
+            <a href="./Langue.html">Langue</a>
+            <ul class="Menu_langue">
+              <li><a href="#">Langue française</a></li>
+              <li><a href="#">Langue anglaise</a></li>
+              <li><a href="#">Langue Arabe</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="burger">
+        <ul>
+          <li class="menu">
+            <a href="#">Menu</a>
+            <ul id="burger-menu">
+              <li><a href="./space-y-6.html">Space-y-6</a></li>
+              <li><a href="./a propos.html">&Aacute; propos</a></li>
+              <li><a href="./y-6-Colection.html">y-6-Colection</a></li>
+              <li><a href="./Decouvrir.html">Découvrir</a></li>
+              <li><a href="./Assistance.html">Assistance</a></li>
+              <li><a href="./Shop.html">Panier</a></li>
+              <div style="padding: 20px">
+                <li><a href="compte.html">Account</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li class="langueBg">
+                  <a href="./Langue.html">Langue</a>
+                  <ul class="Menu_langueBg">
+                    <li><a href="#">Française</a></li>
+                    <li><a href="#">Anglaise</a></li>
+                    <li><a href="#">Arabe</a></li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div
+        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+          style="
+            background: rgb(237, 191, 177);
+            background: radial-gradient(
+              circle,
+              rgba(237, 191, 177, 0.4) 17%,
+              rgba(237, 161, 227, 0.6) 100%
+            );
+
+            filter: blur(50px);
+          "
+        ></div>
+      </div>
+      <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+          <h2
+            class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+          >
+            Connexion
+          </h2>
+        </div>
+
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form class="space-y-6" action="#" method="POST">
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium leading-6 text-gray-900"
+                >Email address</label
+              >
+              <div class="mt-2">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <label
+                  for="password"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >Mot de passe</label
+                >
+                <div class="text-sm">
+                  <a
+                    href="#"
+                    class="font-semibold text-indigo-600 hover:text-indigo-500"
+                    >Vous avez des difficultés de connexion ?</a
+                  >
+                </div>
+              </div>
+              <div class="mt-2">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  required
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Connexion
+              </button>
+            </div>
+            <div
+              class="mt-10 text-center leading-9 tracking-tight text-gray-900"
+            >
+              <p>---- Rejoindre notre équipe ----</p>
+            </div>
+            <div
+              class="font-semibold text-indigo-600 hover:text-indigo-500 bon"
+            >
+              <a
+                onclick="creationCompte()"
+                class="font-semibold leading-6 text-indigo-600"
+                >Créer un compte</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        &copy; Projet Web 2023-2024 Conception et r&eacute;alisation par MOHAMED
+        MEHDI ZMANTAR. Tous droits r&eacute;serv&eacute;s.
+      </p>
+      <div class="ConR">
+        <table>
+          <tr>
+            <td>
+              <a href="https://github.com/mzmantar" target="_blank"
+                ><img src="./img/LogoContact/github-logo.png" alt="github"
+              /></a>
+            </td>
+            <td>
+              <a
+                href="https://www.linkedin.com/in/mohamed-mehdi-zmantar-962352230/"
+                target="_blank"
+                ><img src="./img/LogoContact/linkedin-logo.png" alt="linkedin"
+              /></a>
+            </td>
+            <td>
+              <a href="https://www.facebook.com/MEHDIZMANTAR01/" target="_blank"
+                ><img src="./img/LogoContact/facebook-logo.png" alt="facebook"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+    <script src="js/js3.js"></script>
+    <script src="js/script2.js"></script>
+  </body>
+</html>

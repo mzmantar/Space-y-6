@@ -1,0 +1,20 @@
+* {
+    cursor: url(normal_white.png), default;
+}
+
+a,
+button {
+    cursor: url(pointer_white.png), pointer;
+}
+
+.dark {
+    cursor: url(normal_black.png), default;
+}
+
+a.dark,
+button.dark,
+.dark a:not(.light),
+.dark button:not(.light) {
+    cursor: url(pointer_black.png), pointer;
+   
+}

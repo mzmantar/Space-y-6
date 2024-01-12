@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Avenir LT Pro";
+    src: url("./AvenirLTProBook.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Black";
+    src: url("./AvenirLTProBlack.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Black Oblique";
+    src: url("./AvenirLTProBlackOblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Heavy";
+    src: url("./AvenirLTProHeavy.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Heavy Oblique";
+    src: url("./AvenirLTProHeavyOblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Medium";
+    src: url("./AvenirLTProMedium.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Medium Oblique";
+    src: url("./AvenirLTProMediumOblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Roman";
+    src: url("./AvenirLTProRoman.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Oblique";
+    ;
+    src: url("./AvenirLTProOblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro";
+    src: url("./AvenirLTProBook.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Oblique";
+    src: url("./AvenirLTProBookOblique.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Light";
+    src: url("./AvenirLTProLight.otf");
+}
+
+@font-face {
+    font-family: "Avenir LT Pro Light Oblique";
+    src: url("./AvenirLTProLightOblique.otf");
+}
+
+@font-face {
+    font-family: TESLA;
+    src: url("../fonts/TESLA.ttf");
+}

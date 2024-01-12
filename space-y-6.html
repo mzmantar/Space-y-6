@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      @import url("../cursors/cursors.css");
+
+      header {
+        position: absolute;
+      }
+      footer {
+        color: #fff;
+        position: fixed;
+        bottom: -2%;
+        width: 100%;
+        z-index: 999;
+      }
+      footer p {
+        color: #fff;
+        margin-left: 5%;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 80%;
+      }
+      .ConR img {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: -34px;
+        margin-right: 10px;
+        left: 4350%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="light">
+      <nav class="left">
+        <div id="logo">
+          <h2>space-y-6.</h2>
+        </div>
+      </nav>
+    </header>
+    <section class="section zero dark">
+      <div class="bg-video">
+        <video src="mp4/space-y-6.mp4" autoplay></video>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; Projet Web 2023-2024 Conception et r&eacute;alisation par MOHAMED
+        MEHDI ZMANTAR. Tous droits r&eacute;serv&eacute;s.
+      </p>
+      <div class="ConR">
+        <table>
+          <tr>
+            <td>
+              <a href="https://github.com/mzmantar" target="_blank"
+                ><img src="./img/LogoContact/github-logo.png" alt="github"
+              /></a>
+            </td>
+            <td>
+              <a
+                href="https://www.linkedin.com/in/mohamed-mehdi-zmantar-962352230/"
+                target="_blank"
+                ><img src="./img/LogoContact/linkedin-logo.png" alt="linkedin"
+              /></a>
+            </td>
+            <td>
+              <a href="https://www.facebook.com/MEHDIZMANTAR01/" target="_blank"
+                ><img src="./img/LogoContact/facebook-logo.png" alt="facebook"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+    <script>
+      var monElement = document.getElementsByClassName("left")[0];
+
+      function permuterClasses() {
+        monElement.classList.remove("left");
+        monElement.classList.add("center");
+      }
+
+      setTimeout(permuterClasses, 1000);
+    </script>
+    <script src="js/js3.js"></script>
+    <script src="js/script2.js"></script>
+  </body>
+</html>
