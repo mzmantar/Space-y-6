@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./css/style.css -o ./css/dist/compiled.css --watch"
-    
+    "tailwind": "npx tailwindcss -i ./css/style.css -o ./css/dist/compiled.css --watch",
+    "build:css": "tailwindcss build styles.css -o output.css"
   },
   "author": "",
   "license": "ISC",
