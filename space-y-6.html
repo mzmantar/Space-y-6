@@ -39,7 +39,7 @@
       .bg-video {
         width: 100%;
       }
-      .text-overlay {
+      .text-o {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -48,6 +48,34 @@
         font-size: 24px;
         font-family: Tesla;
         text-align: center;
+        display: none;
+      }
+      .img-o {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        animation: bb 1.5s ease infinite;
+      }
+
+      @keyframes bb {
+        0% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 0.65;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .img-o-p {
+        position: absolute;
+        top: 50%;
+        left: 49.8%;
+        transform: translateX(-50%);
         display: none;
       }
     </style>
@@ -62,8 +90,14 @@
     </header>
     <section class="section zero dark">
       <div class="bg-video">
-        <video id="myVideo" src="mp4/space-y-6.mp4" autoplay></video>
-        <div class="text-overlay" id="textOverlay">Fin de la vidéo</div>
+        <video id="SVideo" src="mp4/space-y-6.mp4" autoplay></video>
+        <div class="text-o" id="textO">Fin de la vidéo</div>
+        <div class="img-o">
+          <img src="./img/LogoContact/arrow-square-down.png" alt="" srcset="" />
+        </div>
+        <div class="img-o-p">
+          <img src="./img/LogoContact/play.png" alt="" />
+        </div>
       </div>
     </section>
 
@@ -97,11 +131,36 @@
       </div>
     </footer>
     <script>
-      var video = document.getElementById("myVideo");
-      var textOverlay = document.getElementById("textOverlay");
+      var video = document.getElementById("SVideo");
+      var textOverlay = document.getElementById("textO");
+      var suivP = document.querySelector(".img-o");
+      var imgOverlay = document.querySelector(".img-o-p");
+
       video.addEventListener("ended", function () {
         textOverlay.style.display = "block";
+        suivP.style.display = "block";
+        imgOverlay.style.display = "none";
       });
+
+      document
+        .querySelector(".bg-video")
+        .addEventListener("click", function () {
+          if (video.paused) {
+            video.play();
+            imgOverlay.style.display = "none";
+            textOverlay.style.display = "none";
+            suivP.style.display = "none";
+          } else {
+            video.pause();
+            imgOverlay.style.display = "block";
+            textOverlay.style.display = "none";
+            suivP.style.display = "none";
+          }
+        });
+      function clickBB() {
+        location.href = "./index.html";
+      }
+      suivP.onclick = clickBB;
     </script>
     <script src="js/js3.js"></script>
     <script src="js/script2.js"></script>
