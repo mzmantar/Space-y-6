@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./css/style.css -o ./css/dist/compiled.css --watch",
-    "build": "tailwindcss build styles.css -o output.css"
+    "build": "tailwindcss build ./css/style.css -o ./css/dist/compiled.css"
   },
   "author": "",
   "license": "ISC",

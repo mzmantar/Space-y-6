@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <style>
       @import url("../cursors/cursors.css");
+      @import url("../fonts/fonts.css");
 
       header {
         position: absolute;
@@ -32,11 +33,28 @@
         margin-right: 10px;
         left: 4350%;
       }
+      .section {
+        position: relative;
+      }
+      .bg-video {
+        width: 100%;
+      }
+      .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        font-family: Tesla;
+        text-align: center;
+        display: none;
+      }
     </style>
   </head>
   <body>
     <header class="light">
-      <nav class="left">
+      <nav class="center">
         <div id="logo">
           <h2>space-y-6.</h2>
         </div>
@@ -44,7 +62,8 @@
     </header>
     <section class="section zero dark">
       <div class="bg-video">
-        <video src="mp4/space-y-6.mp4" autoplay></video>
+        <video id="myVideo" src="mp4/space-y-6.mp4" autoplay></video>
+        <div class="text-overlay" id="textOverlay">Fin de la vidéo</div>
       </div>
     </section>
 
@@ -78,14 +97,11 @@
       </div>
     </footer>
     <script>
-      var monElement = document.getElementsByClassName("left")[0];
-
-      function permuterClasses() {
-        monElement.classList.remove("left");
-        monElement.classList.add("center");
-      }
-
-      setTimeout(permuterClasses, 1000);
+      var video = document.getElementById("myVideo");
+      var textOverlay = document.getElementById("textOverlay");
+      video.addEventListener("ended", function () {
+        textOverlay.style.display = "block";
+      });
     </script>
     <script src="js/js3.js"></script>
     <script src="js/script2.js"></script>
