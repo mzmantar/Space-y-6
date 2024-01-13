@@ -30,7 +30,7 @@ let Inzelalbouton = document.getElementById("logo");
 function yhbetcitron() {
   location.href = "./index.html";
 }
-Inzelalbouton.onclick = yhbetcitron;
+Inzelalbouton.addEventListener("click", yhbetcitron);
 
 let tunisie = document.querySelector(".AudioTn");
 
